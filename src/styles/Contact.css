@@ -1,0 +1,50 @@
+/* Contact.css */
+
+/* Estilos para la sección Contact */
+.contact {
+    background: linear-gradient(to right, #0033ab, #0f172a); /* Gradiente de fondo más claro */
+    color: #c0c2ff;
+    padding: 80px 20px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.contact h2 {
+    color: white; /* Azul */
+    font-size: 2.4em;
+    margin-bottom: 25px;
+}
+
+.contact p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+
+
+.social-media {
+    margin-top: 40px;
+}
+
+.social-media-link {
+    display: inline-block;
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.social-media-icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.social-media-link:hover {
+    color: #c0c2ff; /* Azul */
+}

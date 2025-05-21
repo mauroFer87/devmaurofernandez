@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es"> 
+  <head>
+    <meta charset="utf-8" />
+    <!-- Preconexión para mejorar performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Favicon en múltiples formatos y tamaños -->
+    <link rel="icon" href="%PUBLIC_URL%/portafolio.png" sizes="any">
+    <link rel="icon" href="%PUBLIC_URL%/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/portafolio.png">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" crossorigin="use-credentials">
+    
+    <!-- Meta tags esenciales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Portafolio profesional de Mauro Fernández, desarrollador web. Conoce mis proyectos y habilidades." />
+    
+
+    
+    <title>Mauro Fernández | Desarrollador Web</title>
+    
+    <!-- Analytics (opcional) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=TU-ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'TU-ID');
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <div style="text-align: center; padding: 2rem; background: #f8d7da; color: #721c24;">
+        <h1>JavaScript está deshabilitado</h1>
+        <p>Esta aplicación web requiere JavaScript para funcionar correctamente.</p>
+        <p>Por favor, habilita JavaScript en tu navegador para continuar.</p>
+      </div>
+    </noscript>
+    
+    <div id="root"></div>
+    
+    <!-- Fallback para navegadores muy antiguos -->
+    <script>
+      if (!window.Promise || !window.fetch || !window.Symbol) {
+        document.write('<script src="%PUBLIC_URL%/polyfills.js"><\/script>');
+      }
+    </script>
+  </body>
+</html>

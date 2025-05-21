@@ -1,0 +1,29 @@
+/* Footer.css */
+
+/* Estilos para el footer */
+.footer {
+    background: linear-gradient(to right, #0033ab, #000000); /* Gradiente de negro */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    color: white; /* Gris claro para el texto */
+}
+
+.footer a {
+    color: white; /* Celeste */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    color: #0057ae; /* Azul */
+    text-decoration: underline;
+}
