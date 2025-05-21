@@ -18,7 +18,7 @@ const Contact = () => {
         <div>
          
           <div className="social-media">
-            <a href="mailto:dev.maurofernandez.com" target="_blank" rel="noopener noreferrer" className="social-media-link">
+            <a href="mailto:dev.maurofernandez@gmail.com" target="_blank" rel="noopener noreferrer" className="social-media-link">
               <img src={gmailIcon} alt="email" className="social-media-icon" />
               dev.maurofernandez@gmail.com
             </a>
