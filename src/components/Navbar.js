@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import '../styles/Navbar.css'; 
 //import logo from '../logo.ico'; // Importar el logo
 
@@ -17,18 +16,18 @@ function Navbar() {
     };
 
     useEffect(() => {
-        const handleClickOutside = (event) => {
-            if (!event.target.closest('.navbar')) {
-                closeMenu();
-            }
-        };
+    const handleClickOutside = (event) => {
+        if (!event.target.closest('.navbar') && isOpen) {
+            setIsOpen(false);
+        }
+    };
 
-        document.addEventListener('click', handleClickOutside);
+    document.addEventListener('click', handleClickOutside);
 
-        return () => {
-            document.removeEventListener('click', handleClickOutside);
-        };
-    }, [isOpen]);
+    return () => {
+        document.removeEventListener('click', handleClickOutside);
+    };
+}, [isOpen]);
 
     return (
         <nav className="navbar">
